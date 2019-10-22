@@ -1,0 +1,20 @@
+{
+    "name": "UUID Generator",
+    "identifier": "com.tableplus.TablePlus.UUIDGenerator",
+    "version": "1.0",
+    "detail": "This plugin helps you generate UUID",
+    "author": "TablePlus",
+    "authorEmail": "nick@tableplus.com",
+    "scripts": [
+        {
+            "location": "data",
+            "type": "separator"
+        },
+        {
+            "location": "data",
+            "type": "action",
+            "script": "uuidGenerator.js",
+            "name": "Generate UUID"
+        }
+    ]
+}

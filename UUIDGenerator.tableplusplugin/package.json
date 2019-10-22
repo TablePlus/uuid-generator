@@ -1,0 +1,22 @@
+{
+  "name": "com.tableplus.TablePlus.UUIDGenerator",
+  "version": "1.0.0",
+  "description": "This plugin helps you generate UUID",
+  "main": "main.js",
+  "dependencies": {
+    "uuid": "^3.3.3",
+    "webpack": "^4.41.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^4.41.2"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "https://tableplus.com",
+  "license": "MIT"
+}
