@@ -2,7 +2,7 @@
 
 This is a TablePlus Plugin, install OpenURL you will have a menu `Generate UUID` in context menu.
 
-![menu](https://github.com/TablePlus/OpenURL/blob/master/Resource/demo.gif "menu")
+![menu](https://github.com/TablePlus/uuid-generator/blob/master/Resource/demo.gif "menu")
 
 # Support
 
