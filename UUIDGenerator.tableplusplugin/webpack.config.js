@@ -4,23 +4,10 @@ const path = require('path');
 const config = {
     entry: './main.js',
     output: {
-        filename: 'uuidGenerator.js'
+        path: path.resolve(__dirname, './'),
+        filename: './uuidGenerator.js'
     },
-    module: {
-        loaders: [{
-            test: /\.js$/,
-            loader: 'babel-loader',
-            query: {
-                presets: ['es2015']
-            }
-        }]
-    },
-    stats: {
-        colors: true
-    },
-    plugins: [
-        new webpack.optimize.UglifyJsPlugin()
-    ]
+    mode: 'production'
 };
 
 module.exports = config;
