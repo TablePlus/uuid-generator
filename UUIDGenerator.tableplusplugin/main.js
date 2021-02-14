@@ -19,6 +19,10 @@ var onRun = function(context) {
         context.alert('Error', 'Could not generate UUID');
         return;
     }
+
+    // Make sure the constant is nil
+    row.setConstant(col.name, '');
+
     // Update row value
     row.update(col.name, uuid);
 
