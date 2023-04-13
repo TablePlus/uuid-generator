@@ -1,8 +1,6 @@
-'use strict';
-
 import { getUUID } from './library/helper';
 
-var onRun = function(context) {
+var setContent = function(context, uuid) {
     // Get all the items
     var row = context.clickedRow();
     var col = context.clickedColumn();
@@ -13,8 +11,6 @@ var onRun = function(context) {
         return;
     }
 
-    // Generate UUID
-    let uuid = getUUID();
     if (uuid == null) {
         context.alert('Error', 'Could not generate UUID');
         return;
@@ -33,4 +29,31 @@ var onRun = function(context) {
     context.update();
 };
 
-global.onRun = onRun;
+var v1 = function (context) {
+    try {
+        let uuid = getUUID("1", true);
+        setContent(context, uuid);
+    } catch (err) {
+        context.alert('Error', err);
+    }
+}
+
+var v4 = function (context) {
+    let uuid = getUUID("4", true);
+    setContent(context, uuid);
+}
+
+var v1nohyphens = function (context) {
+    let uuid = getUUID("1", false);
+    setContent(context, uuid);
+}
+
+var v4nohyphens = function (context) {
+    let uuid = getUUID("4", false);
+    setContent(context, uuid);
+}
+
+global.v1 = v1;
+global.v4 = v4;
+global.v1nohyphens = v1nohyphens;
+global.v4nohyphens = v4nohyphens;

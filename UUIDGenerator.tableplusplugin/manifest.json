@@ -1,7 +1,7 @@
 {
     "name": "UUID Generator",
     "identifier": "com.tableplus.TablePlus.UUIDGenerator",
-    "version": "1.1",
+    "version": "2.0",
     "detail": "This plugin helps you generate UUID",
     "author": "TablePlus",
     "authorEmail": "nick@tableplus.com",
@@ -14,7 +14,43 @@
             "location": "data",
             "type": "action",
             "script": "uuidGenerator.js",
-            "name": "Generate UUID"
+            "handler": "v1",
+            "name": "Generate UUID V1"
+        },
+        {
+            "location": "data",
+            "name": "Generate UUID With",
+            "location": "item",
+            "type": "submenu",
+            "children": [
+                {
+                    "type": "action",
+                    "script": "uuidGenerator.js",
+                    "handler": "v1",
+                    "name": "UUID V1"
+                },
+                {
+                    "type": "action",
+                    "script": "uuidGenerator.js",
+                    "handler": "v4",
+                    "name": "UUID V4"
+                },
+                {
+                    "type": "separator"
+                },
+                {
+                    "type": "action",
+                    "script": "uuidGenerator.js",
+                    "handler": "v1nohyphens",
+                    "name": "UUID V1 without hyphens"
+                },
+                {
+                    "type": "action",
+                    "script": "uuidGenerator.js",
+                    "handler": "v4nohyphens",
+                    "name": "UUID V4 without hyphens"
+                }
+            ]
         }
     ]
 }
