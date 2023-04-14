@@ -1,7 +1,7 @@
 {
     "name": "UUID Generator",
     "identifier": "com.tableplus.TablePlus.UUIDGenerator",
-    "version": "2.0",
+    "version": "2.1",
     "detail": "This plugin helps you generate UUID",
     "author": "TablePlus",
     "authorEmail": "nick@tableplus.com",
@@ -20,7 +20,6 @@
         {
             "location": "data",
             "name": "Generate UUID With",
-            "location": "item",
             "type": "submenu",
             "children": [
                 {
